@@ -7,7 +7,7 @@ cd /var/www/html
 echo "<html>" > index.html
 
 echo "<h1>Welcome to MyWebsite</h1>" >> index.html
-echo "<h3>You are running instance from this IP:</h3>"
+echo "<h3>You are running instance from this IP:</h3>" >> index.html
 
 echo "<br>Private IP: " >> index.html
 curl http://169.254.169.254/latest/meta-data/local-ipv4 >> index.html
